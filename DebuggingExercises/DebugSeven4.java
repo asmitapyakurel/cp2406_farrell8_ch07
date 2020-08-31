@@ -11,16 +11,17 @@ public class DebugSeven4
       int numLetters = 0;
       int stringLength = aString.length();
       System.out.println("In all lowercase, the sentence is: " + aString.toLowerCase());
-      for(int i = 0; i < aString.length(); i++)
+      for(int i = 0; i <aString.length(); i++)
       {
-         char ch = Character.toLowerCase(aString.charAt(stringLength));
-         System.out.print(ch);
-         if(Character.isLetter(Integer.parseInt(aString)))
+//         char ch = Character.toLowerCase(aString.charAt(i);
+//         System.out.print(ch);
+
+         if(Character.isLetter(aString.charAt(i)))
             numLetters++;
       }
       System.out.println();
       System.out.println
               ("The number of CHARACTERS in the string is " + stringLength);
-      System.out.println("The number of LETTERS is " + stringLength);
+      System.out.println("The number of LETTERS is " + numLetters);
    }
 }
