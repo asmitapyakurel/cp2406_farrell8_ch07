@@ -23,7 +23,7 @@ public class DebugSeven2
       {
          if(str.charAt(x) == ' ')
          {
-            partStr = str.substring(x, lastSpace + 1);
+            partStr = str.substring(start, lastSpace);
             num = Integer.parseInt(partStr);
             System.out.println("                " + num);
             sum += num;
