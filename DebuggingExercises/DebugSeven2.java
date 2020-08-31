@@ -2,7 +2,6 @@
 // separated by spaces
 // Program converts them to numbers and sums them
 import java.util.*;
-
 public class DebugSeven2
 {
    public static void main(String[] args)
@@ -19,17 +18,17 @@ public class DebugSeven2
       System.out.print("Enter a series of integers separated by spaces >> ");
       str = in.nextLine();
       length = str.length();
-      for(x = 0; x <= length; ++x)
+      for(x = 0; x < length; x++)
       {
-         if(str.charAt(x) == ' ')
+         if(str.charAt(x) == (' '))
          {
+            lastSpace=x;
             partStr = str.substring(start, lastSpace);
             num = Integer.parseInt(partStr);
             System.out.println("                " + num);
             sum += num;
-            lastSpace = x;
+            start = lastSpace+1;
          }
-
       }
       partStr = str.substring(lastSpace + 1, length);
       num = Integer.parseInt(partStr);
